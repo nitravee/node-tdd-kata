@@ -25,6 +25,10 @@ function twoNum(){
   expect(strCal('1,2')).to.be.equal(3)
 }
 
+function multipleNum(){
+  expect(strCal('1,1,1,1,1,1,1,1,1,1')).to.be.equal(10)
+}
+
 // Start Example Behaviors
 function exampleBehaviors() {
   it('should be true', itAlwaysTrue);
@@ -33,6 +37,7 @@ function exampleBehaviors() {
   it('should be 0', empty);
   it('should be 1', oneNum);
   it('should be 3', twoNum);
+  it('should be 6', multipleNum);
 }
 
 
